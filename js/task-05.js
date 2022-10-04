@@ -5,4 +5,7 @@ inputRef.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
   spanRef.textContent = event.currentTarget.value;
+  if (spanRef.textContent === '') {
+    spanRef.textContent = 'Anonymous';
+  }
 }
